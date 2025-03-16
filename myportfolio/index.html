@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benard Kiplangat - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Benard Kiplangat</h1>
+        <p>Full Stack Developer | JavaScript | React | Node.js | MongoDB</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Dynamic Fullstack Web Developer skilled in JavaScript, HTML, CSS, React, Node.js, Express, MongoDB, Mongoose, and Next.js. Graduate of a comprehensive web development bootcamp with a focus on crafting seamless user experiences. Strong communicator and collaborative team member with a passion for clean, efficient code.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>JavaScript, HTML, CSS, React, Node.js, Express, MongoDB, Mongoose, Next.js</li>
+        </ul>
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>Collaboration, Problem-Solving, Communication, Eagerness to Learn</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Collaborative Task Manager (React)</strong> – Developed a responsive task management application using React. <a href="https://github.com/skills-cogrammar/C12-Lecture-Backpack/tree/main/Full-Stack%20Software%20Development%20(FSSD)/Week08/Lecture2/" target="_blank">GitHub Repo</a></li>
+            <li><strong>Personal Portfolio Website</strong> – Showcases completed projects using HTML, CSS, and React. <a href="https://github.com/kiplangatbenard/my-portfolio" target="_blank">GitHub Repo</a></li>
+            <li><strong>Event Management Platform (Full-Stack)</strong> – Developed a comprehensive POS system with user authentication, inventory management, and sales tracking. <a href="https://www.technoserve.org/fight-poverty/projects/smart-duka-empowering-shopkeepers-in-nairobi/" target="_blank">Project Link</a></li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Technical Experience</h2>
+        <h3>HyperionDev, Full Stack Web Development Bootcamp (03/2024 - 04/2025)</h3>
+        <ul>
+            <li>Worked with the ‘Full Stack’ of web technologies to build both front-end and back-end systems.</li>
+            <li>Achieved an overall grade average of 99%.</li>
+            <li>Mastered Python programming within 6 months, enhancing coding skills and efficiency in data manipulation.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education & Self-Study</h2>
+        <ul>
+            <li><strong>HyperionDev</strong>, Full Stack Web Development Bootcamp (09/2024 - 04/2025)</li>
+            <li><strong>Chuka University</strong>, BSc Computer Science (09/2021 - 12/2024)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kiplanagtbenah@gmail.com">kiplanagtbenah@gmail.com</a></p>
+        <p>Phone: (+254) 704443055</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/benard-kiplangat-b9143b2b4" target="_blank">Benard Kiplangat</a></p>
+        <p>GitHub: <a href="https://github.com/kiplangatbenard" target="_blank">kiplangatbenard</a></p>
+        <p>Portfolio: <a href="https://www.hyperiondev.com/portfolio/BK24060016621/" target="_blank">HyperionDev Portfolio</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Benard Kiplangat. All Rights Reserved.</p>
+    </footer>
+    
+    <button onclick="toggleTheme()" class="theme-toggle">Toggle Theme</button>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>
